@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #1E1E20;
     font-family: Arial, Helvetica, sans-serif;
+    background: 
+    radial-gradient(circle at 20% 30%, rgba(84, 84, 212, 0.4), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(84, 84, 212, 0.3), transparent 60%),
+    #1E1E20;
 }
 .header{
     height: 120px;
@@ -82,7 +85,7 @@ main{
     font-size: 20px;
 }
 .container2{
-    margin-top: 55px;
+    margin-top: 105px;
     display: flex;
     justify-content: space-around;
     
@@ -111,6 +114,7 @@ main{
     text-align: center;
 }
 .container3{
+    
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -158,9 +162,7 @@ main{
     font-size: 30px;
     margin: 10px auto;
 }
-.card_description{
-    
-}
+
 .card_list_header{
     font-size: 20px;
     font-weight: bold;
@@ -182,4 +184,149 @@ main{
     color: #fff;
     font-size: 15px;
     margin-top: 5px;
+}
+.title_container4{
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+.container4{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+}
+.part1_container4{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card_container4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.h2_container4{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+.p_container4{
+    color: #fff;
+    opacity: 0.4;
+    margin-top: 20px;
+}
+.container6{
+    padding-top: 80px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+.svg_container6{
+    display: flex;
+    justify-content: flex-end;
+}
+.second_part_container6{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container6_text{
+    font-size: 60px;
+    color: #fff;
+}
+.container6_button{
+    width: 150px;
+    height: 60px;
+    background-color: #5454D4;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+}
+/* form */
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 300px;
+    width: 450px;
+    border-radius: 15px;
+    border: 2px solid red;
+
+    /* From https://css.glass */
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.07);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.4px);
+-webkit-backdrop-filter: blur(7.4px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+label{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 18px;
+}
+.input{
+    background-color: transparent;
+    border: 2px solid #fff ;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 18px;
+    margin: 5px 0;
+}
+#mark_input::before{
+    content: '👎' ;
+    margin-left: -20px;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+#mark_input::after{
+    content: '👍' ;
+    position: relative;
+    top: 15px;
+}
+
+@media (max-width:768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+    }
+    .left_part2{
+        display: flex;
+        flex-direction: column;
+    }
+    .right_part2{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .second_part_container6{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .container6_button{
+        margin-top: 45px;
+    }
 }
