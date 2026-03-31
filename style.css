@@ -201,12 +201,15 @@ main{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 .card_container4{
     display: flex;
     flex-direction: column;
+    
     align-items: center;
     text-align: center;
+    width: 250px;
 }
 .h2_container4{
     color: #fff;
@@ -301,7 +304,11 @@ label{
     position: relative;
     top: 15px;
 }
-
+.img_ja{
+    
+    height: 400px;
+    width: 600px;
+}
 @media (max-width:768px){
     .container{
         display: flex;
